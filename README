@@ -1,4 +1,7 @@
+#README
 
+
+##Parameters
 The scripts takes as input the following parameters :
 	-i Input csv file
 	-t Target feature
@@ -8,9 +11,15 @@ The scripts takes as input the following parameters :
 	-o The output file containing the predicted column
 
 
+##Dataflow
 The input file will be loaded and preprocessed thanks to the function specified trought the -p parameter.
 The target column will be extracted and the data will be splited in half (test/train).
 The model will be fited on the train data then evaluated on the test data.
 The prediction will be computed on the whole data and exported to the output csv file.
+
+
+##Ex : 
+
+ipython -i -- train.py -i data/train.csv -t Survived -m RFC -a "{'max_depth':3, 'n_estimators':10}" -p myPreprocessing -o output.csv
 
 
