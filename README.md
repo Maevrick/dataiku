@@ -26,10 +26,10 @@ ipython -i -- train.py -i data/train.csv -t Survived -m RFC -a "{'max_depth':3, 
 ##Adding your own modules
 ###Models
 To add a model, simply create a .py file under the Models/folder.
-The model must define a class named as the file
-Therefore, at least 3 functions must be defined, fit, predict and score
-See Models/Dummy.py
+The model must define a class named as the file.
+Therefore, at least 3 functions must be defined, fit, predict and score.
+See Models/Dummy.py.
 ###Preprocessing functions
-To add a preprocessing function create a py file under Preprocessing/
-The .py file must contain at least one function named preprocess
-See Preprocessing/Dummy.py
+To add a preprocessing function create a py file under Preprocessing/.
+The .py file must contain at least one function named preprocess.
+See Preprocessing/Dummy.py.
