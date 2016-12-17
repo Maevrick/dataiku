@@ -18,7 +18,7 @@ The model will be fited on the train data then evaluated on the test data.
 The prediction will be computed on the whole data and exported to the output csv file.
 
 
-##Ex : 
+##Exemple : 
 
 ipython -i -- train.py -i data/train.csv -t Survived -m RFC -a "{'max_depth':3, 'n_estimators':10}" -p myPreprocessing -o output.csv
 
